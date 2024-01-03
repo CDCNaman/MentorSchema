@@ -72,7 +72,7 @@ const mentorSchema = new mongoose.Schema({
 
 // Middleware to automatically store logo URL before saving mentor instance.
 mentorSchema.pre('save', async function (next) {
-    console.log("hello");
+    
   // storing logo URL for social media links
   const socialMediaLinks = this.socialMediaLinks;
   for (const link of socialMediaLinks) {

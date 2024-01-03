@@ -2,7 +2,7 @@ const Mentor = require('../models/mentor'); // Adjust the path based on your pro
 
 // Controller to populate the 'Mentor' model with dynamic data received through a POST request
 async function populateMentor(req, res){
-    console.log(req.body);
+
   try {
     // Extract dynamic data from the request body
     const {
